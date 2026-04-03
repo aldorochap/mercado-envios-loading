@@ -20,3 +20,8 @@ Este microserviço foi desenvolvido para otimizar o processo de carregamento de 
 ## 🛡️ Regras de Negócio Implementadas
 - Validação de `PackageID` vs `RouteID` do veículo.
 - Disparo de evento de rastreio (`OUT_FOR_DELIVERY`) com timestamp preciso.
+
+## 📊 Observabilidade
+- **Logs Estruturados:** Emissão de logs em formato JSON para integração com pilhas de monitoramento (ELK/Dynatrace).
+- **Métricas Críticas:** Monitoramento de Latência de Bipe (P99) e Taxa de Erros de Validação de Rota.
+- **Rastreabilidade:** Implementação de Context Propagation para rastrear o pacote entre API e Kafka.
